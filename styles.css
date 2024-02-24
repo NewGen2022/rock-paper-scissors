@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/heimdal');
 
 body{
-    font-family: Heimdal;
+    font-family: Heimdal, 'Courier New', Courier, monospace;
     font-weight: 900;
     margin: 0;
     text-align: center;
@@ -12,19 +12,59 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10vh 4vw;
+    -webkit-user-select: none; /* Disable text selection for WebKit browsers like Chrome and Safari */
+    -moz-user-select: none;    /* Disable text selection for Firefox */
+    -ms-user-select: none;     /* Disable text selection for Internet Explorer */
+    user-select: none;         /* Disable text selection for other browsers */
 }
 
 #header{
     font-size: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 
 #main{
     
 }
 
+#gameSection{
+    font-size: 20px;
+}
+
+#gameSection button{
+    width: 7vw;
+    height: 7vw;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 54px;
+    text-decoration: none;
+    border: none;
+}
+
+#rockPlayer:hover, #paperPlayer:hover, #scissorsPlayer:hover{
+    box-shadow: 0 0 12px white;
+    background-color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fff,
+      0 0 82px #fff,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+    color: rgb(0, 196, 203);
+    cursor: pointer;
+}
+
+#rockComputer, #paperComputer, #scissorsComputer{
+    background-color: #e8e8e8;
+    color: white;
+    cursor: not-allowed;
+}
+
 #resultOfRound{
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
 #endGameSection{
@@ -32,16 +72,40 @@ body{
     margin-top: 100px;
 }
 
-
 #playAgainButton{
     text-decoration: none;
     border: none;
-    margin-top: 50px;
     background-color: white;
-    width: 110px;
-    height: 35px;
+    width: 140px;
+    height: 50px;
     border-radius: 10px;
+    
 }
 #playAgainButton:hover{
     box-shadow: 0 0 10px white;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #fff,
+      0 0 82px #fff,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+    color: rgb(0, 196, 203);
+}
+
+button{
+    font-family: Heimdal, 'Courier New', Courier, monospace;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#emoji-size{
+    margin-bottom: 30px;
+    font-size: 100px; 
+}
+
+#gameResult{
+    font-size: 28px;;
 }
