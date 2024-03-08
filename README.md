@@ -8,7 +8,7 @@
 
  ***Use the LIVE SERVER extension in VS Code***
 
- ***Or visit [WeatherApp on GitHub Pages](https://newgen2022.github.io/rock-paper-scissors/)***
+ ***Or visit [Rock_Paper_Scissors Game on GitHub Pages](https://newgen2022.github.io/rock-paper-scissors/)***
 
 <div align="center">
   <h2>App preview</h2>
